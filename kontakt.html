@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Pogotowie komputerowe" />
+        <meta name="keywords" content="IT, pogotowie" />
+        <title>Pogotowie komputerowe</title>
+        <link rel="stylesheet" href="styl.css" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="banner">
+                <img src="animacja.gif" alt="baner" />
+            </header>
+            <nav class="n1">
+                <a href="index.html">O nas</a><a href="kontakt.html">Kontakt</a>
+            </nav>
+            <main>
+                <section></section>
+                <section>
+                    <h3>Formularz kontaktowy</h3>
+                    <table>
+                        <tr>
+                            <td>Imię:</td>
+                            <td><input type="text" name="name" /></td>
+                        </tr>
+                        <tr>
+                            <td>Nazwisko:</td>
+                            <td><input type="text" name="surname" /></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail:</td>
+                            <td><input type="text" name="email" /></td>
+                        </tr>
+                        <tr>
+                            <td>Usługa:</td>
+                            <td>
+                                <select name="service" id="service">
+                                    <option value="naprawa komputera">
+                                        naprawa komputera
+                                    </option>
+                                    <option value="odzyskiwanie danych">
+                                        odzyskiwanie danych
+                                    </option>
+                                    <option value="problemy z oprogramowaniem">
+                                        problemy z oprogramowaniem
+                                    </option>
+                                    <option value="konfiguracja sieci LAN">
+                                        konfiguracja sieci LAN
+                                    </option>
+                                    <option value="inne">inne</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="copy"
+                                    id="copy"
+                                    checked
+                                />
+                                Wyślij kopię wiadomości
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button id="reset">Resetuj</button>
+                                <button id="send">Prześlij</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <p id="result"></p>
+                </section>
+            </main>
+            <section></section>
+            <footer>
+                <p>Autor strony: Imię <b>Nazwisko</b></p>
+            </footer>
+        </div>
+    </body>
+</html>
