@@ -23,65 +23,77 @@
                 <section></section>
                 <section>
                     <h3>Formularz kontaktowy</h3>
-                    <table>
-                        <tr>
-                            <td>Imię:</td>
-                            <td><input type="text" name="name" /></td>
-                        </tr>
-                        <tr>
-                            <td>Nazwisko:</td>
-                            <td><input type="text" name="surname" /></td>
-                        </tr>
-                        <tr>
-                            <td>E-mail:</td>
-                            <td><input type="text" name="email" /></td>
-                        </tr>
-                        <tr>
-                            <td>Usługa:</td>
-                            <td>
-                                <select name="service" id="service">
-                                    <option value="naprawa komputera">
-                                        naprawa komputera
-                                    </option>
-                                    <option value="odzyskiwanie danych">
-                                        odzyskiwanie danych
-                                    </option>
-                                    <option value="problemy z oprogramowaniem">
-                                        problemy z oprogramowaniem
-                                    </option>
-                                    <option value="konfiguracja sieci LAN">
-                                        konfiguracja sieci LAN
-                                    </option>
-                                    <option value="inne">inne</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input
-                                    type="checkbox"
-                                    name="copy"
-                                    id="copy"
-                                    checked
-                                />
-                                Wyślij kopię wiadomości
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <button id="reset">Resetuj</button>
-                                <button id="send">Prześlij</button>
-                            </td>
-                        </tr>
-                    </table>
+                    <form id="contact-form">
+                        <table>
+                            <tr>
+                                <td>Imię:</td>
+                                <td><input type="text" name="name" /></td>
+                            </tr>
+                            <tr>
+                                <td>Nazwisko:</td>
+                                <td><input type="text" name="surname" /></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td><input type="email" name="email" /></td>
+                            </tr>
+                            <tr>
+                                <td>Usługa:</td>
+                                <td>
+                                    <select name="service" id="service">
+                                        <option value="naprawa komputera">
+                                            naprawa komputera
+                                        </option>
+                                        <option value="odzyskiwanie danych">
+                                            odzyskiwanie danych
+                                        </option>
+                                        <option
+                                            value="problemy z oprogramowaniem"
+                                        >
+                                            problemy z oprogramowaniem
+                                        </option>
+                                        <option value="konfiguracja sieci LAN">
+                                            konfiguracja sieci LAN
+                                        </option>
+                                        <option value="inne">inne</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="copy"
+                                        id="copy"
+                                        checked
+                                    />
+                                    Wyślij kopię wiadomości
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input
+                                        type="reset"
+                                        id="reset"
+                                        value="Resetuj"
+                                    />
+                                    <input
+                                        type="submit"
+                                        id="send"
+                                        value="Prześlij"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
                     <p id="result"></p>
                 </section>
             </main>
             <section></section>
             <footer>
-                <p>Autor strony: Imię <b>Nazwisko</b></p>
+                <p>Autor strony: <b>Nazwisko</b> Imię</p>
             </footer>
         </div>
     </body>
